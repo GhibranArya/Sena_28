@@ -12,22 +12,22 @@
         }
 
         .login-card {
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(6px);
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            padding: 40px;
             width: 100%;
-            max-width: 400px;
+            max-width: 420px;
         }
 
         .form-label {
-            font-weight: 500;
+            font-weight: 600;
         }
 
         .form-control:focus {
-            border-color: #007bff;
-            box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+            border-color: #0d6efd;
+            box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, .25);
         }
 
         .btn-primary {
@@ -35,15 +35,25 @@
         }
 
         .btn-primary:hover {
-            background-color: #0056b3;
-            border-color: #0056b3;
+            background-color: #0b5ed7;
+            border-color: #0a58ca;
+        }
+
+        .demo-info {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #6c757d;
+            text-align: center;
         }
     </style>
 </head>
 <body class="d-flex align-items-center justify-content-center vh-100">
 
-    <div class="login-card shadow">
-        <h3 class="text-center mb-4">Login ke Galeri</h3>
+    <div class="login-card">
+        <div class="text-center mb-4">
+            <img src="{{ asset('assets/logo.png') }}" alt="Logo" width="60" height="60" class="mb-3">
+            <h4>Login ke <strong>Galeri Alam</strong></h4>
+        </div>
 
         @if ($errors->any())
             <div class="alert alert-danger">
@@ -68,11 +78,13 @@
             </div>
 
             <button type="submit" class="btn btn-primary w-100">Masuk</button>
-            <div align-center>
-                <p>test@example.com</p>
-                <p>12345678</p>
-            </div>
         </form>
+
+        <div class="demo-info">
+            <p><strong>Demo Login:</strong></p>
+            <p>Email: <code>test@example.com</code></p>
+            <p>Password: <code>12345678</code></p>
+        </div>
     </div>
 
     <script src="{{ asset('assets/jquery-3.6.1.js') }}"></script>
