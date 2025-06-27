@@ -68,6 +68,10 @@
             </div>
 
             <button type="submit" class="btn btn-primary w-100">Masuk</button>
+            <div align-center>
+                <p>test@example.com</p>
+                <p>12345678</p>
+            </div>
         </form>
     </div>
 
