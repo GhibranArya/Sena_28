@@ -51,7 +51,7 @@
 
     <div class="login-card">
         <div class="text-center mb-4">
-            <h4>Login ke <strong>Galeri Alam</strong></h4>
+            <h4>Login<strong>Mahasiswa</strong></h4>
         </div>
 
         @if ($errors->any())
