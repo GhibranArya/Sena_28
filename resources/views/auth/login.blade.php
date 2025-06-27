@@ -51,7 +51,6 @@
 
     <div class="login-card">
         <div class="text-center mb-4">
-            <img src="{{ asset('assets/logo.png') }}" alt="Logo" width="60" height="60" class="mb-3">
             <h4>Login ke <strong>Galeri Alam</strong></h4>
         </div>
 
